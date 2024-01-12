@@ -18,6 +18,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/whosthegirlin',function(){
+    return view('whosthegirlin');
+});
+
+Route::get('/whosthegirlin2',function(){
+    return view('whosthegirlin2');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
